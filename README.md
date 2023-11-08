@@ -40,7 +40,8 @@ python insert_data.py
 python main.py
 ```
 * To run the Extraction and loading, run the `source` module
-```sh python source.py
+```sh
+ python source.py
 ```
 
 
