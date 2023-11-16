@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  gcloudapp:
+    build: .
+    environment:
+      GOOGLE_APPLICATION_CREDENTIALS: /opt/realtonsoft-16a045663192.json
+    volumes:
+      - ./config/realtonsoft-16a045663192.json:/opt/realtonsoft-16a045663192.json
+      - ./app:/app
+    command: tail -f /dev/null

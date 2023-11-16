@@ -13,6 +13,8 @@ pw = getpass.getpass(f'Enter password for {un}@{cs}: ')
 myoffset = 0
 maxrows = 100
 
+d = None
+oracledb.init_oracle_client(lib_dir=d)
 
 with oracledb.connect(
     user=un, password=pw, dsn=cs, mode=oracledb.SYSDBA

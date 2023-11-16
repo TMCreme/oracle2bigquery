@@ -43,5 +43,16 @@ python main.py
 ```sh
  python source.py
 ```
+-----------------
+
+### Running the Google Cloud Docker-Compose
+* Check to confirm a `config` directory else create a `config` directory/folder and put your service account credential file in it. 
+* Open the `docker-compose-gcp.yml` file and under the volumes section, change the name of the credential 
+* Change the value of the environmental variable `GOOGLE_APPLICATION_CREDENTIALS` as well
+* Run the following command to create a python environment with gcloud set up
+```sh
+docker-compose -f docker-compose-gcp.yml up
+```
+
 
 
