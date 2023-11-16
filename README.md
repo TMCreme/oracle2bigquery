@@ -53,6 +53,11 @@ python main.py
 ```sh
 docker-compose -f docker-compose-gcp.yml up
 ```
+* Run this command to create the table once you have edited the main.py file with the right credentials and schema
+```sh
+docker-compose -f docker-compose-gcp.yml run --rm gcloudapp sh -c "python main.py" 
+```
+
 
 
 
