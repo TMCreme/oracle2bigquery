@@ -4,7 +4,7 @@ Connect to oracle
 import getpass
 import oracledb
 
-from main import add_data
+from app.main import add_data
 
 un = 'sys'
 cs = 'localhost:1521/FREE'
